@@ -1,5 +1,214 @@
-@tailwind base;
+@import "components/body";
+@import "components/navigation";
 
-@tailwind components;
+#sr-header-area {
+  background-color: rgba(0,0,0,.7);
+  border-bottom: 0;
+}
+.linkinfo {
+  color: #000101;
+}
 
-@tailwind utilities;
+.titlebox form.toggle, .leavemoderator, #header ul.tabmenu li a:after {
+  background-color: transparent !important;
+}
+
+.subscribers .word, .users-online .word{
+   /* This hides the default user info (Like 20 reading now instead of hunters). */
+   display: none;
+}
+
+#header .tabmenu li.selected {
+    border-bottom: 1px solid white;
+    background: transparent!important;
+}
+
+#header .tabmenu li + li a:after {
+    background-color: transparent!important;
+}
+
+.thing .title {
+  color: #5DD2FB;
+}
+
+.arrow {
+  background-image:url(%%upvote%%) !important;
+  background-position: 0 !important;
+}
+
+.arrow.downmod, .arrow.down {
+  transform: rotate(180deg);
+}
+.side .arrow,
+.midcol .arrow {
+    background-size: 15px;
+    width: 15px;
+}
+
+.arrow {
+  height: 16px;
+  width: 20px;
+}
+
+.link .score.likes {
+  color: #2174C5;
+}
+
+.pagename a {
+  color: ghostwhite;
+  margin: 20px;
+  font-size: 80px;
+  transition: .2s text-shadow;
+}
+
+.pagename a:hover {
+  text-shadow: 0px 0px 30px rgba(255,255,255,.3);
+  text-decoration: none;
+}
+
+.redditname a {
+    text-indent: -9000px; /* Move CompetitiveCrucible text off screen */
+}
+
+.subscribers .number:after {
+   content: " Members";
+}
+
+.users-online .number:after {
+   content: " Users online";
+}
+
+.morelink .nub {
+   /* This changes the submit new link / text post section to be boxes instead of a weird box arrow thing. */
+   display: none;
+}
+
+a[href$="#s"]{
+    /* Spoiler Tag */
+    color: transparent;
+    text-shadow: 0 0 15px #A00000, 0 0 15px #FF0000, 0 0 15px #A00000, 0 0 15px #FF0000;
+    cursor: default;
+    transition: .3s;
+    margin: 0 3px;
+}
+
+a[href$="#s"]:hover{
+    color: #A00000;
+    text-shadow:none;
+    transition: 1s;
+}
+
+a[href$="#s"]:before{
+    color: #2D1E96;
+    content: "Spoiler: ";
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.thing .title:visited {
+  color: #999;
+}
+
+/* Note: In the future we could add lots of different spoiler tags for different things with something like this:
+
+a[href$="#skin"]:before{
+    color: #2D1E96;
+    content: "Spoilers for new skins: ";
+    font-weight: bold;
+    text-shadow: none;
+*/
+
+.titlebox h1 a {
+  color: white;
+}
+
+.icon-menu a {
+    background: none no-repeat scroll center left;
+}
+
+.message-count {
+  background-color: #DC5050;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.md {
+  color: #ccc;
+  background-color: #00091E;
+  padding: 1em;
+}
+
+.link .usertext-body .md {
+    background: #0E395E;
+    margin-right: 1rem;
+    border: 0px solid #369;
+}
+
+.sr-bar a, .dropdown.srdrop .selected {
+  color: #5DD2FB;
+  opacity: .8;
+}
+
+.link.last-clicked {
+  border: 0px
+}
+
+.flair, .linkflairlabel {
+    margin-left: .5em;
+}
+
+.link .usertext-body .md {
+  border-radius: 0px;
+  border: 1px solid #fff;
+}
+#sr-header-area .redesign-beta-optin {
+  background: #000101;
+  width: 118px;
+}
+
+#sr-header-area .redesign-beta-optin:before {
+ background: transparent;
+}
+
+a {
+  color: ghostwhite;
+}
+
+.titlebox h1 {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.new-comment .usertext-body {
+  background-color: #00091E;
+  border: 1px #336699;
+}
+
+.usertext.border .usertext-body {
+  background-color: #00091E;
+  border: 1px #336699;
+}
+
+.linefield label {
+  color: black;
+}
+
+.linefield .usertext {
+  color: black;
+}
+
+.linefield .usertext a{
+  color: blue;
+}
+
+.linefield .upload {
+  color: black;
+}
+
+.little a {
+  color: blue;
+}
+
+/* How to change up and down votes: https://www.reddit.com/wiki/styling/css/skinupanddownarrows */

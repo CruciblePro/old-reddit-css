@@ -1,0 +1,141 @@
+#header {
+    background: url(%%header%%) no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    background-color: transparent;
+    color: #5ECBD6;
+    border-bottom: 0px white solid;
+  }
+
+  #header-img.default-header {
+    display: none;
+  }
+  
+  #header-bottom-left .tabmenu {
+      background: rgba(20,20,20,.5);
+      width: 100%;
+  }
+  
+  #header .tabmenu li a {
+    transform: skewX(30deg);
+    position: relative;
+    display: inline-block;
+}
+
+#header .tabmenu li.selected {
+    border-bottom: 1px solid white;
+    background: transparent!important;
+}
+
+#header .tabmenu li + li a:after {
+    background-color: transparent!important;
+}
+
+#header .tabmenu.tabmenu li.selected a:after {
+    border: 0px solid #5f99cf;
+    border-bottom: 0px solid white;
+    color: white;
+    background: transparent!important;
+}
+
+.tabmenu {
+    display: inline;
+    float: left;
+    text-transform: uppercase;
+ }
+ 
+ .tabmenu li {
+     font-weight: 100;
+     display: inline-block;
+     border-right: 1px solid rgba(255,255,255, .1);
+     transform: skewX(-30deg);
+     margin: 0;
+ }
+ 
+ .tabmenu li:hover {
+   background: rgba(30,30,30,.7);
+ }
+ 
+ .tabmenu li.selected a {
+   border-right: 1px solid rgba(255,255,255, .1);
+ }
+ 
+ .tabmenu li.selected a {
+   color: #369;
+   border-bottom: 3px solid white;
+ }
+ 
+ #header-bottom-left {
+    height: 200px;
+ }
+ 
+ #header-bottom-right {
+   background: transparent;
+ }
+ 
+ #header-bottom-left .tabmenu {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    display: inline;
+ }
+ 
+ #header-img {
+    /* This is the reddit alien and "reddit" in the bottom left */
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+ }
+
+ #header .tabmenu li a{
+    font-size:0px !important;
+    height:20px !important;
+    background:transparent !important;
+    border:0px !important;
+    padding: 15px 13px 10px;
+}
+
+#header .tabmenu li a:after{
+    font-size:16px !important;
+    padding: 2px 6px 0 6px !important;
+    background-color: #eff7ff !important;
+}
+#header .tabmenu li.selected a:after{
+    /* special case for selected */
+    border: 1px solid #5f99cf;
+    border-bottom: 1px solid white;
+    background:#fff !important;
+}
+
+#header .tabmenu li:first-child a:after{
+    content:"Hot"
+}
+
+#header .tabmenu li:first-child + li a:after{
+    content:"New";
+}
+
+#header .tabmenu li:first-child + li + li a:after{
+    content:"Rising";
+}
+
+#header .tabmenu li:first-child + li + li + li a:after{
+    content:"Controversial";
+}
+#header .tabmenu li:first-child + li + li + li + li a:after{
+    content:"Top";
+}
+
+#header .tabmenu li:first-child + li + li + li + li + li a:after{
+    content:"Gilded";
+}
+
+#header .tabmenu li:first-child + li + li + li + li + li + li a:after{
+    content:"Wiki";
+}
+
+#header .tabmenu [href$="gilded/"] {
+   /* You can edit the tab menu like this as well.
+   color: red;
+   */ 
+}
