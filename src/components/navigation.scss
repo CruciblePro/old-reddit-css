@@ -40,7 +40,7 @@
 
 .tabmenu {
     display: inline;
-    float: left;
+    //float: left;
     text-transform: uppercase;
  }
  
@@ -134,8 +134,8 @@
     content:"Wiki";
 }
 
-#header .tabmenu [href$="gilded/"] {
+/*#header .tabmenu [href$="gilded/"] {
    /* You can edit the tab menu like this as well.
    color: red;
-   */ 
-}
+   / 
+}*/
