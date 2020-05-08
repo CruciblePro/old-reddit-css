@@ -18,15 +18,6 @@
    display: none;
 }
 
-#header .tabmenu li.selected {
-    border-bottom: 1px solid white;
-    background: transparent!important;
-}
-
-#header .tabmenu li + li a:after {
-    background-color: transparent!important;
-}
-
 .thing .title {
   color: #5DD2FB;
 }
